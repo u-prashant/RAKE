@@ -33,7 +33,7 @@ def build_stop_word_regex(stop_words_file_path: str) -> re.Pattern:
 
 
 class RAKE(object):
-    def __init__(self, stop_words_file_path: str):
+    def __init__(self, stop_words_file_path: str = 'resources/SmartStoplist.txt'):
         self.stop_words_file_path = stop_words_file_path
         self.stop_words_pattern = build_stop_word_regex(stop_words_file_path)
 
