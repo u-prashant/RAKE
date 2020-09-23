@@ -8,11 +8,12 @@ def load_stop_words(stop_words_file_path: str) -> list:
     stop_words_file_path -- filepath of a file containing stop words
     """
     stop_words = []
-    for line in open(stop_words_file_path):
+    file = open(stop_words_file_path)
+    for line in file:
         if line.strip()[0:1] != "#":
             for word in line.split(): # in case more than one per line
                 stop_words.append(word)
-    
+    file.close()
     return stop_words
 
 

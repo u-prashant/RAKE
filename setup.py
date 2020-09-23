@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="rake",
+    name="rake-keyword",
     version="0.0.1",
     author="Prashant Upadhyay",
     author_email="prashant.u@hotmail.com",
