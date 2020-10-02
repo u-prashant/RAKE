@@ -21,7 +21,8 @@ from rake import Rake
 
 text = "Black grapes are famous for their use in making alcohol."
 
-rake = Rake()
+rake = Rake() # Method 1
+rake = Rake(path_to_stop_words_file) # Method 2 
 
 rake.exec(text)
 # Returns keywords with scores in reverse sorted order: [('black grapes', 4.0), ('making alcohol', 4.0), ('famous', 1.0)]
