@@ -12,7 +12,7 @@ RAKE-Keyword is a Python library that can extract keywords from any document or 
 
 ## Installation
 ```
-pip install rake
+pip install rake-keyword
 ```
 
 ## Quick Start
