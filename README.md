@@ -5,6 +5,7 @@
 [![Build Status](https://img.shields.io/travis/u-prashant/RAKE?color=blue)](https://travis-ci.com/u-prashant/RAKE)
 [![GitHub license](https://img.shields.io/github/license/u-prashant/RAKE?color=blue)](https://github.com/u-prashant/RAKE/blob/master/LICENSE)
 [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/Naereen/badges/)
+![PyPI](https://img.shields.io/pypi/v/rake-keyword?color=blue)
 
 
 RAKE-Keyword is a Python library that can extract keywords from any document or a piece of text. It is based on RAKE algorithm. Rapid Automatic Keyword Extraction (RAKE) is a keyword extraction method that is extremely efficient and operates on individual documents. It tries to determine the key phrases in a text by calculating the co-occurrences of every word in a key phrase and also its frequency in the entire text. [Link to Research Paper!](https://doi.org/10.1002/9780470689646.ch1)
@@ -22,7 +23,7 @@ text = "Black grapes are famous for their use in making alcohol."
 
 rake = Rake()
 
-raje.exec(text)
+rake.exec(text)
 # Returns keywords with scores in reverse sorted order: [('black grapes', 4.0), ('making alcohol', 4.0), ('famous', 1.0)]
 ```
 
